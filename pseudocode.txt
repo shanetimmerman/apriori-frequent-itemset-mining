@@ -1,0 +1,91 @@
+# Initialize Mapper/Reducer (job1) - Counts unique users
+map(movies){
+    split(:)
+    movie = split[0]
+    if movieId < max movie id {
+        users = split[1]
+        count = 0
+        for user in user.split("\n") {
+            if userID < max user id {
+                emit(user)
+            }
+        } 
+    }
+}
+
+Reducer {
+    setup() {
+        get userCounter from context
+        userCount = 0
+    }
+
+    reduce(userId) {
+        userCount++
+    }
+
+    cleanUp() {
+        userCounter.increment(userCount)
+    }
+}
+
+# Intermediate Mapper/Reducer (job2) - Threshold filtering, emits (user, [movies]) and (movie, probabilty)
+map(movies) :
+    split(:)
+    movie = split[0]
+    if movieId < max movie id {
+        users = split[1]
+        review = user.split("\n")
+        filter reviews by max user id
+        count = reviews.length
+        if count/ total user count > support cuttoff:
+            for user in reviews {
+                emit(user, movie)
+            }
+            emit(movie, probability) to iteration_1/itemsets
+        }
+    }
+
+reduce(user, movies) {
+    emit(user, movies) to iteration_1/users
+}
+
+# FrequencyItemsetJoin Mapper/Reducer (job3) - Theta self join of previous iteration itemsets
+Mapper {
+    setup() {
+        previous_itemsets = load from filecache # list of sets
+    }
+    
+    map(itemset) {
+        for itemset2 in previous itemsets {
+            if length(union(set1, set2)) == iteration number {
+                emit(union(set1, set2), {set1, set2})
+            }
+        }
+    }
+}
+
+reduce(union, [subsets])
+    emit(union, subsets.join)
+
+
+# FrequencyItemset Mapper/Reducer (job4) - Iterat
+mapper:
+    setup():
+        current_itemsets = load from filecache # list of sets
+        
+    map(person, movies):
+        for itemset in current_itemsets:
+            if itemset is subset of movies:
+                emit(itemset, 1)
+
+reducer:
+    setup():
+        {previousItemsets,frequencies} = load from filecache # list of sets
+
+    reduce(itemset, count):
+        sum = sum(counts)
+        if sum / total user count > threshold:
+            emit(itemset, frequency) to iteration_i/itemsets
+            for element in currentItemsets:
+                previousItemset = currentItemsets - element
+                emit(previousItemset -> element, frequency_current / previousItemsets.get(previousItemset)) to iteration_i/probabilities 

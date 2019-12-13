@@ -1,0 +1,831 @@
+2019-12-08 19:25:19,076 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:25:20,659 WARN com.amazon.ws.emr.hadoop.fs.shaded.com.amazonaws.http.apache.utils.ApacheUtils (main): NoSuchMethodException was thrown when disabling normalizeUri. This indicates you are using an old version (< 4.5.8) of Apache http client. It is recommended to use http client version >= 4.5.9 to avoid the breaking change introduced in apache client 4.5.7 and the latency in exception handling. See https://github.com/aws/aws-sdk-java/issues/1919 for more information
+2019-12-08 19:25:22,261 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 5
+2019-12-08 19:25:22,275 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library
+2019-12-08 19:25:22,278 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev 9566b9ed1d86bc2697f1622e4e9825da6c011583]
+2019-12-08 19:25:22,686 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:34
+2019-12-08 19:25:22,968 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0001
+2019-12-08 19:25:23,745 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0001
+2019-12-08 19:25:23,967 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0001/
+2019-12-08 19:25:23,968 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0001
+2019-12-08 19:25:35,271 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0001 running in uber mode : false
+2019-12-08 19:25:35,272 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:25:55,427 INFO org.apache.hadoop.mapreduce.Job (main):  map 6% reduce 0%
+2019-12-08 19:26:09,497 INFO org.apache.hadoop.mapreduce.Job (main):  map 7% reduce 0%
+2019-12-08 19:26:12,515 INFO org.apache.hadoop.mapreduce.Job (main):  map 13% reduce 0%
+2019-12-08 19:26:13,528 INFO org.apache.hadoop.mapreduce.Job (main):  map 15% reduce 0%
+2019-12-08 19:26:14,533 INFO org.apache.hadoop.mapreduce.Job (main):  map 18% reduce 0%
+2019-12-08 19:26:15,540 INFO org.apache.hadoop.mapreduce.Job (main):  map 39% reduce 0%
+2019-12-08 19:26:16,546 INFO org.apache.hadoop.mapreduce.Job (main):  map 54% reduce 0%
+2019-12-08 19:26:17,554 INFO org.apache.hadoop.mapreduce.Job (main):  map 59% reduce 0%
+2019-12-08 19:26:30,611 INFO org.apache.hadoop.mapreduce.Job (main):  map 65% reduce 0%
+2019-12-08 19:26:37,647 INFO org.apache.hadoop.mapreduce.Job (main):  map 74% reduce 0%
+2019-12-08 19:26:38,655 INFO org.apache.hadoop.mapreduce.Job (main):  map 82% reduce 2%
+2019-12-08 19:26:40,664 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 2%
+2019-12-08 19:26:44,682 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 7%
+2019-12-08 19:26:45,686 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 10%
+2019-12-08 19:26:46,691 INFO org.apache.hadoop.mapreduce.Job (main):  map 94% reduce 13%
+2019-12-08 19:26:47,695 INFO org.apache.hadoop.mapreduce.Job (main):  map 97% reduce 13%
+2019-12-08 19:26:48,699 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-12-08 19:26:50,706 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 25%
+2019-12-08 19:26:51,715 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:26:55,737 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:26:56,749 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:26:58,763 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0001 completed successfully
+2019-12-08 19:26:58,911 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 56
+	File System Counters
+		FILE: Number of bytes read=79569
+		FILE: Number of bytes written=7676677
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3264
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=34
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=2136710039
+		S3: Number of bytes written=0
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=34
+		Launched reduce tasks=9
+		Data-local map tasks=34
+		Total time spent by all maps in occupied slots (ms)=44467344
+		Total time spent by all reduces in occupied slots (ms)=17032608
+		Total time spent by all map tasks (ms)=926403
+		Total time spent by all reduce tasks (ms)=177423
+		Total vcore-milliseconds taken by all map tasks=926403
+		Total vcore-milliseconds taken by all reduce tasks=177423
+		Total megabyte-milliseconds taken by all map tasks=1422955008
+		Total megabyte-milliseconds taken by all reduce tasks=545043456
+	Map-Reduce Framework
+		Map input records=35240
+		Map output records=206052
+		Map output bytes=1009538
+		Map output materialized bytes=249301
+		Input split bytes=3264
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1810
+		Reduce shuffle bytes=249301
+		Reduce input records=206052
+		Reduce output records=0
+		Spilled Records=412104
+		Shuffled Maps =306
+		Failed Shuffles=0
+		Merged Map outputs=306
+		GC time elapsed (ms)=27788
+		CPU time spent (ms)=253960
+		Physical memory (bytes) snapshot=27401510912
+		Virtual memory (bytes) snapshot=154606415872
+		Total committed heap usage (bytes)=24517279744
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	fi.FrequencyItemsetCounters
+		USERS=1810
+	File Input Format Counters 
+		Bytes Read=2136710039
+	File Output Format Counters 
+		Bytes Written=0
+2019-12-08 19:26:59,021 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:26:59,243 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 5
+2019-12-08 19:26:59,340 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:34
+2019-12-08 19:26:59,404 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0002
+2019-12-08 19:26:59,649 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0002
+2019-12-08 19:26:59,657 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0002/
+2019-12-08 19:26:59,657 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0002
+2019-12-08 19:27:09,750 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0002 running in uber mode : false
+2019-12-08 19:27:09,751 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:27:30,890 INFO org.apache.hadoop.mapreduce.Job (main):  map 6% reduce 0%
+2019-12-08 19:27:45,967 INFO org.apache.hadoop.mapreduce.Job (main):  map 12% reduce 0%
+2019-12-08 19:27:47,977 INFO org.apache.hadoop.mapreduce.Job (main):  map 23% reduce 0%
+2019-12-08 19:27:48,985 INFO org.apache.hadoop.mapreduce.Job (main):  map 41% reduce 0%
+2019-12-08 19:27:49,990 INFO org.apache.hadoop.mapreduce.Job (main):  map 51% reduce 0%
+2019-12-08 19:27:50,994 INFO org.apache.hadoop.mapreduce.Job (main):  map 53% reduce 0%
+2019-12-08 19:27:52,000 INFO org.apache.hadoop.mapreduce.Job (main):  map 59% reduce 0%
+2019-12-08 19:28:06,047 INFO org.apache.hadoop.mapreduce.Job (main):  map 59% reduce 2%
+2019-12-08 19:28:11,066 INFO org.apache.hadoop.mapreduce.Job (main):  map 65% reduce 2%
+2019-12-08 19:28:12,069 INFO org.apache.hadoop.mapreduce.Job (main):  map 68% reduce 2%
+2019-12-08 19:28:13,073 INFO org.apache.hadoop.mapreduce.Job (main):  map 74% reduce 5%
+2019-12-08 19:28:15,079 INFO org.apache.hadoop.mapreduce.Job (main):  map 76% reduce 5%
+2019-12-08 19:28:19,092 INFO org.apache.hadoop.mapreduce.Job (main):  map 76% reduce 6%
+2019-12-08 19:28:20,095 INFO org.apache.hadoop.mapreduce.Job (main):  map 79% reduce 8%
+2019-12-08 19:28:21,098 INFO org.apache.hadoop.mapreduce.Job (main):  map 82% reduce 11%
+2019-12-08 19:28:22,101 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 11%
+2019-12-08 19:28:24,106 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 12%
+2019-12-08 19:28:26,112 INFO org.apache.hadoop.mapreduce.Job (main):  map 88% reduce 13%
+2019-12-08 19:28:27,116 INFO org.apache.hadoop.mapreduce.Job (main):  map 91% reduce 13%
+2019-12-08 19:28:28,119 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 13%
+2019-12-08 19:28:30,129 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 40%
+2019-12-08 19:28:31,134 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:28:33,140 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:28:35,150 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 78%
+2019-12-08 19:28:37,156 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:28:38,167 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0002 completed successfully
+2019-12-08 19:28:38,205 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 56
+	File System Counters
+		FILE: Number of bytes read=313354
+		FILE: Number of bytes written=8082968
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=3264
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=34
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=2136758488
+		S3: Number of bytes written=324885
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=34
+		Launched reduce tasks=9
+		Data-local map tasks=34
+		Total time spent by all maps in occupied slots (ms)=47648592
+		Total time spent by all reduces in occupied slots (ms)=19752384
+		Total time spent by all map tasks (ms)=992679
+		Total time spent by all reduce tasks (ms)=205754
+		Total vcore-milliseconds taken by all map tasks=992679
+		Total vcore-milliseconds taken by all reduce tasks=205754
+		Total megabyte-milliseconds taken by all map tasks=1524754944
+		Total megabyte-milliseconds taken by all reduce tasks=632076288
+	Map-Reduce Framework
+		Map input records=35240
+		Map output records=63700
+		Map output bytes=623417
+		Map output materialized bytes=328569
+		Input split bytes=3264
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1770
+		Reduce shuffle bytes=328569
+		Reduce input records=63700
+		Reduce output records=0
+		Spilled Records=127400
+		Shuffled Maps =306
+		Failed Shuffles=0
+		Merged Map outputs=306
+		GC time elapsed (ms)=28883
+		CPU time spent (ms)=267160
+		Physical memory (bytes) snapshot=27728191488
+		Virtual memory (bytes) snapshot=154612686848
+		Total committed heap usage (bytes)=24609030144
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	fi.FrequencyItemsetCounters
+		ITEMSETS=160
+	File Input Format Counters 
+		Bytes Read=2136758488
+	File Output Format Counters 
+		Bytes Written=0
+2019-12-08 19:28:38,950 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:28:39,281 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00000
+2019-12-08 19:28:39,281 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00001
+2019-12-08 19:28:39,281 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00002
+2019-12-08 19:28:39,281 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00003
+2019-12-08 19:28:39,282 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00004
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00005
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00006
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00007
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00008
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00009
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00010
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00011
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00012
+2019-12-08 19:28:39,288 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00013
+2019-12-08 19:28:39,289 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00014
+2019-12-08 19:28:39,289 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00015
+2019-12-08 19:28:39,289 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00016
+2019-12-08 19:28:39,289 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00031
+2019-12-08 19:28:39,289 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00032
+2019-12-08 19:28:39,378 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:28:39,820 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 19
+2019-12-08 19:28:39,897 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:19
+2019-12-08 19:28:39,934 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0003
+2019-12-08 19:28:39,989 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0003
+2019-12-08 19:28:39,995 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0003/
+2019-12-08 19:28:39,995 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0003
+2019-12-08 19:28:54,198 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0003 running in uber mode : false
+2019-12-08 19:28:54,198 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:29:12,169 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:29:21,201 INFO org.apache.hadoop.mapreduce.Job (main):  map 16% reduce 0%
+2019-12-08 19:29:30,232 INFO org.apache.hadoop.mapreduce.Job (main):  map 26% reduce 0%
+2019-12-08 19:29:31,241 INFO org.apache.hadoop.mapreduce.Job (main):  map 68% reduce 0%
+2019-12-08 19:29:32,246 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:29:34,252 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 11%
+2019-12-08 19:29:44,286 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 44%
+2019-12-08 19:29:45,289 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 78%
+2019-12-08 19:29:46,292 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:29:47,300 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0003 completed successfully
+2019-12-08 19:29:47,330 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 56
+	File System Counters
+		FILE: Number of bytes read=103080
+		FILE: Number of bytes written=5171787
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=2147
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=19
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=78180
+		S3: Number of bytes written=124497
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=19
+		Launched reduce tasks=9
+		Data-local map tasks=19
+		Total time spent by all maps in occupied slots (ms)=27374304
+		Total time spent by all reduces in occupied slots (ms)=10640544
+		Total time spent by all map tasks (ms)=570298
+		Total time spent by all reduce tasks (ms)=110839
+		Total vcore-milliseconds taken by all map tasks=570298
+		Total vcore-milliseconds taken by all reduce tasks=110839
+		Total megabyte-milliseconds taken by all map tasks=875977728
+		Total megabyte-milliseconds taken by all reduce tasks=340497408
+	Map-Reduce Framework
+		Map input records=160
+		Map output records=25440
+		Map output bytes=248994
+		Map output materialized bytes=159434
+		Input split bytes=2147
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=12720
+		Reduce shuffle bytes=159434
+		Reduce input records=25440
+		Reduce output records=12720
+		Spilled Records=50880
+		Shuffled Maps =171
+		Failed Shuffles=0
+		Merged Map outputs=171
+		GC time elapsed (ms)=16382
+		CPU time spent (ms)=95100
+		Physical memory (bytes) snapshot=14456307712
+		Virtual memory (bytes) snapshot=104957808640
+		Total committed heap usage (bytes)=12897484800
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=3909
+	File Output Format Counters 
+		Bytes Written=124497
+2019-12-08 19:29:47,365 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:29:47,423 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00000
+2019-12-08 19:29:47,423 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00001
+2019-12-08 19:29:47,423 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00002
+2019-12-08 19:29:47,423 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00003
+2019-12-08 19:29:47,424 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00004
+2019-12-08 19:29:47,424 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00005
+2019-12-08 19:29:47,424 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00006
+2019-12-08 19:29:47,424 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00007
+2019-12-08 19:29:47,424 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_2/part-r-00008
+2019-12-08 19:29:47,427 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00000
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00001
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00002
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00003
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00004
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00005
+2019-12-08 19:29:47,490 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00006
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00007
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00008
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00009
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00010
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00011
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00012
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00013
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00014
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00015
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00016
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00031
+2019-12-08 19:29:47,498 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_1/itemsets/part-m-00032
+2019-12-08 19:29:47,550 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:29:48,021 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 9
+2019-12-08 19:29:48,088 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:9
+2019-12-08 19:29:48,120 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0004
+2019-12-08 19:29:48,154 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0004
+2019-12-08 19:29:48,157 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0004/
+2019-12-08 19:29:48,157 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0004
+2019-12-08 19:29:58,342 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0004 running in uber mode : false
+2019-12-08 19:29:58,343 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:30:11,370 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:30:21,409 INFO org.apache.hadoop.mapreduce.Job (main):  map 44% reduce 0%
+2019-12-08 19:30:22,414 INFO org.apache.hadoop.mapreduce.Job (main):  map 78% reduce 0%
+2019-12-08 19:30:23,420 INFO org.apache.hadoop.mapreduce.Job (main):  map 89% reduce 0%
+2019-12-08 19:30:24,431 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:30:28,451 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 11%
+2019-12-08 19:30:30,457 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 44%
+2019-12-08 19:30:31,461 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:30:35,472 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:30:36,478 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:30:37,486 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0004 completed successfully
+2019-12-08 19:30:37,517 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=2105708
+		FILE: Number of bytes written=8272348
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=990
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=1476630
+		S3: Number of bytes written=377592
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=9
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=8196048
+		Total time spent by all reduces in occupied slots (ms)=12462336
+		Total time spent by all map tasks (ms)=170751
+		Total time spent by all reduce tasks (ms)=129816
+		Total vcore-milliseconds taken by all map tasks=170751
+		Total vcore-milliseconds taken by all reduce tasks=129816
+		Total megabyte-milliseconds taken by all map tasks=262273536
+		Total megabyte-milliseconds taken by all reduce tasks=398794752
+	Map-Reduce Framework
+		Map input records=1770
+		Map output records=2110653
+		Map output bytes=37562281
+		Map output materialized bytes=2934637
+		Input split bytes=990
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=12720
+		Reduce shuffle bytes=2934637
+		Reduce input records=2110653
+		Reduce output records=0
+		Spilled Records=4221306
+		Shuffled Maps =81
+		Failed Shuffles=0
+		Merged Map outputs=81
+		GC time elapsed (ms)=6795
+		CPU time spent (ms)=108450
+		Physical memory (bytes) snapshot=9182199808
+		Virtual memory (bytes) snapshot=71782178816
+		Total committed heap usage (bytes)=8037335040
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	fi.FrequencyItemsetCounters
+		ITEMSETS=590
+	File Input Format Counters 
+		Bytes Read=320976
+	File Output Format Counters 
+		Bytes Written=0
+2019-12-08 19:30:37,553 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:30:37,599 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00000
+2019-12-08 19:30:37,599 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00001
+2019-12-08 19:30:37,599 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00002
+2019-12-08 19:30:37,599 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00003
+2019-12-08 19:30:37,600 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00004
+2019-12-08 19:30:37,600 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00005
+2019-12-08 19:30:37,600 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00006
+2019-12-08 19:30:37,600 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00007
+2019-12-08 19:30:37,600 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00008
+2019-12-08 19:30:37,634 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:30:37,921 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 9
+2019-12-08 19:30:38,012 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:9
+2019-12-08 19:30:38,058 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0005
+2019-12-08 19:30:38,097 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0005
+2019-12-08 19:30:38,099 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0005/
+2019-12-08 19:30:38,099 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0005
+2019-12-08 19:30:48,181 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0005 running in uber mode : false
+2019-12-08 19:30:48,182 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:30:59,093 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:31:06,154 INFO org.apache.hadoop.mapreduce.Job (main):  map 78% reduce 0%
+2019-12-08 19:31:07,157 INFO org.apache.hadoop.mapreduce.Job (main):  map 89% reduce 0%
+2019-12-08 19:31:08,162 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:31:13,183 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 11%
+2019-12-08 19:31:15,189 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-12-08 19:31:16,192 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:31:17,195 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:31:18,198 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:31:20,205 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:31:20,209 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0005 completed successfully
+2019-12-08 19:31:20,238 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 55
+	File System Counters
+		FILE: Number of bytes read=115923
+		FILE: Number of bytes written=3422333
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1017
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=174000
+		S3: Number of bytes written=167362
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=9
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=5995632
+		Total time spent by all reduces in occupied slots (ms)=10139712
+		Total time spent by all map tasks (ms)=124909
+		Total time spent by all reduce tasks (ms)=105622
+		Total vcore-milliseconds taken by all map tasks=124909
+		Total vcore-milliseconds taken by all reduce tasks=105622
+		Total megabyte-milliseconds taken by all map tasks=191860224
+		Total megabyte-milliseconds taken by all reduce tasks=324470784
+	Map-Reduce Framework
+		Map input records=590
+		Map output records=34406
+		Map output bytes=510912
+		Map output materialized bytes=185785
+		Input split bytes=1017
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=11285
+		Reduce shuffle bytes=185785
+		Reduce input records=34406
+		Reduce output records=11285
+		Spilled Records=68812
+		Shuffled Maps =81
+		Failed Shuffles=0
+		Merged Map outputs=81
+		GC time elapsed (ms)=6539
+		CPU time spent (ms)=55590
+		Physical memory (bytes) snapshot=8868966400
+		Virtual memory (bytes) snapshot=71820120064
+		Total committed heap usage (bytes)=8082948096
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=17400
+	File Output Format Counters 
+		Bytes Written=167362
+2019-12-08 19:31:20,272 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:31:20,338 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00000
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00001
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00002
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00003
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00004
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00005
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00006
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00007
+2019-12-08 19:31:20,339 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_3/part-r-00008
+2019-12-08 19:31:20,342 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00000
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00001
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00002
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00003
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00004
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00005
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00006
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00007
+2019-12-08 19:31:20,395 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_2/itemsets/part-r-00008
+2019-12-08 19:31:20,426 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:31:21,142 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 9
+2019-12-08 19:31:21,206 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:9
+2019-12-08 19:31:21,238 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0006
+2019-12-08 19:31:21,248 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00000 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00000 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,249 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00001 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00001 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,249 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00002 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00002 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,249 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00003 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00003 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,249 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00004 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00004 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,250 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00005 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00005 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,250 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00006 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00006 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,250 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00007 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00007 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,250 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_3/part-r-00008 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_2/itemsets/part-r-00008 This will be an error in Hadoop 2.0
+2019-12-08 19:31:21,265 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0006
+2019-12-08 19:31:21,267 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0006/
+2019-12-08 19:31:21,267 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0006
+2019-12-08 19:31:34,356 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0006 running in uber mode : false
+2019-12-08 19:31:34,356 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:31:45,654 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:31:53,688 INFO org.apache.hadoop.mapreduce.Job (main):  map 33% reduce 0%
+2019-12-08 19:31:57,700 INFO org.apache.hadoop.mapreduce.Job (main):  map 67% reduce 0%
+2019-12-08 19:31:58,703 INFO org.apache.hadoop.mapreduce.Job (main):  map 78% reduce 0%
+2019-12-08 19:32:01,711 INFO org.apache.hadoop.mapreduce.Job (main):  map 85% reduce 0%
+2019-12-08 19:32:02,714 INFO org.apache.hadoop.mapreduce.Job (main):  map 96% reduce 0%
+2019-12-08 19:32:03,718 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:32:06,727 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 26%
+2019-12-08 19:32:08,733 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:32:09,736 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:32:10,739 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:32:15,753 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:32:15,758 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0006 completed successfully
+2019-12-08 19:32:15,788 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=2663400
+		FILE: Number of bytes written=9337002
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=990
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=1983330
+		S3: Number of bytes written=337730
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=9
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=8400528
+		Total time spent by all reduces in occupied slots (ms)=14156832
+		Total time spent by all map tasks (ms)=175011
+		Total time spent by all reduce tasks (ms)=147467
+		Total vcore-milliseconds taken by all map tasks=175011
+		Total vcore-milliseconds taken by all reduce tasks=147467
+		Total megabyte-milliseconds taken by all map tasks=268816896
+		Total megabyte-milliseconds taken by all reduce tasks=453018624
+	Map-Reduce Framework
+		Map input records=1719
+		Map output records=2140281
+		Map output bytes=48876021
+		Map output materialized bytes=3476132
+		Input split bytes=990
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=11285
+		Reduce shuffle bytes=3476132
+		Reduce input records=2140281
+		Reduce output records=0
+		Spilled Records=4280562
+		Shuffled Maps =81
+		Failed Shuffles=0
+		Merged Map outputs=81
+		GC time elapsed (ms)=6942
+		CPU time spent (ms)=103640
+		Physical memory (bytes) snapshot=9173647360
+		Virtual memory (bytes) snapshot=71787704320
+		Total committed heap usage (bytes)=8077180928
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	fi.FrequencyItemsetCounters
+		ITEMSETS=158
+	File Input Format Counters 
+		Bytes Read=320472
+	File Output Format Counters 
+		Bytes Written=0
+2019-12-08 19:32:15,821 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00000
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00001
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00002
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00003
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00004
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00005
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00006
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00007
+2019-12-08 19:32:15,873 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00008
+2019-12-08 19:32:15,903 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:32:16,202 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 9
+2019-12-08 19:32:16,267 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:9
+2019-12-08 19:32:16,301 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0007
+2019-12-08 19:32:16,331 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0007
+2019-12-08 19:32:16,337 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0007/
+2019-12-08 19:32:16,337 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0007
+2019-12-08 19:32:26,404 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0007 running in uber mode : false
+2019-12-08 19:32:26,404 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:32:36,853 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:32:43,916 INFO org.apache.hadoop.mapreduce.Job (main):  map 33% reduce 0%
+2019-12-08 19:32:44,919 INFO org.apache.hadoop.mapreduce.Job (main):  map 78% reduce 0%
+2019-12-08 19:32:45,923 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:32:52,954 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-12-08 19:32:53,957 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:32:54,960 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:32:56,966 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:32:57,971 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:32:57,977 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0007 completed successfully
+2019-12-08 19:32:58,011 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 55
+	File System Counters
+		FILE: Number of bytes read=11764
+		FILE: Number of bytes written=3157021
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1017
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=54760
+		S3: Number of bytes written=19340
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=9
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=6164544
+		Total time spent by all reduces in occupied slots (ms)=10618752
+		Total time spent by all map tasks (ms)=128428
+		Total time spent by all reduce tasks (ms)=110612
+		Total vcore-milliseconds taken by all map tasks=128428
+		Total vcore-milliseconds taken by all reduce tasks=110612
+		Total megabyte-milliseconds taken by all map tasks=197265408
+		Total megabyte-milliseconds taken by all reduce tasks=339800064
+	Map-Reduce Framework
+		Map input records=158
+		Map output records=3114
+		Map output bytes=62236
+		Map output materialized bytes=24845
+		Input split bytes=1017
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=968
+		Reduce shuffle bytes=24845
+		Reduce input records=3114
+		Reduce output records=968
+		Spilled Records=6228
+		Shuffled Maps =81
+		Failed Shuffles=0
+		Merged Map outputs=81
+		GC time elapsed (ms)=6787
+		CPU time spent (ms)=52070
+		Physical memory (bytes) snapshot=8926908416
+		Virtual memory (bytes) snapshot=71804162048
+		Total committed heap usage (bytes)=8244953088
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=5476
+	File Output Format Counters 
+		Bytes Written=19340
+2019-12-08 19:32:58,048 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00000
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00001
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00002
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00003
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00004
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00005
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00006
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00007
+2019-12-08 19:32:58,099 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/join_iteration_4/part-r-00008
+2019-12-08 19:32:58,102 WARN com.amazonaws.profile.path.cred.CredentialsLegacyConfigLocationProvider (main): Found the legacy config profiles file at [/home/hadoop/.aws/config]. Please move it to the latest default location [~/.aws/credentials].
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00000
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00001
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00002
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00003
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00004
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00005
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00006
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00007
+2019-12-08 19:32:58,148 INFO fi.FrequencyItemset (main): ADDED FILE s3://maprakhil/iteration_3/itemsets/part-r-00008
+2019-12-08 19:32:58,171 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at ip-172-31-38-70.us-east-2.compute.internal/172.31.38.70:8032
+2019-12-08 19:32:58,432 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat (main): Total input files to process : 9
+2019-12-08 19:32:58,514 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:9
+2019-12-08 19:32:58,547 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1575833044870_0008
+2019-12-08 19:32:58,566 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00000 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00000 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,566 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00001 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00001 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,566 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00002 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00002 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,567 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00003 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00003 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,567 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00004 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00004 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,567 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00005 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00005 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,567 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00006 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00006 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,568 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00007 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00007 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,568 WARN org.apache.hadoop.mapreduce.v2.util.MRApps (main): cache file (mapreduce.job.cache.files) s3://maprakhil/join_iteration_4/part-r-00008 conflicts with cache file (mapreduce.job.cache.files) s3://maprakhil/iteration_3/itemsets/part-r-00008 This will be an error in Hadoop 2.0
+2019-12-08 19:32:58,587 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1575833044870_0008
+2019-12-08 19:32:58,590 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://ip-172-31-38-70.us-east-2.compute.internal:20888/proxy/application_1575833044870_0008/
+2019-12-08 19:32:58,590 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1575833044870_0008
+2019-12-08 19:33:08,674 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0008 running in uber mode : false
+2019-12-08 19:33:08,674 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2019-12-08 19:33:20,477 INFO org.apache.hadoop.mapreduce.Job (main):  map 11% reduce 0%
+2019-12-08 19:33:26,532 INFO org.apache.hadoop.mapreduce.Job (main):  map 22% reduce 0%
+2019-12-08 19:33:27,541 INFO org.apache.hadoop.mapreduce.Job (main):  map 33% reduce 0%
+2019-12-08 19:33:28,545 INFO org.apache.hadoop.mapreduce.Job (main):  map 56% reduce 0%
+2019-12-08 19:33:29,549 INFO org.apache.hadoop.mapreduce.Job (main):  map 78% reduce 0%
+2019-12-08 19:33:30,552 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2019-12-08 19:33:35,569 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 11%
+2019-12-08 19:33:36,572 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 33%
+2019-12-08 19:33:37,575 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 44%
+2019-12-08 19:33:38,578 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 56%
+2019-12-08 19:33:39,581 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 67%
+2019-12-08 19:33:40,584 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 78%
+2019-12-08 19:33:41,587 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 89%
+2019-12-08 19:33:43,594 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2019-12-08 19:33:44,602 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1575833044870_0008 completed successfully
+2019-12-08 19:33:44,639 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 57
+	File System Counters
+		FILE: Number of bytes read=296021
+		FILE: Number of bytes written=3863373
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=990
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=536928
+		S3: Number of bytes written=278786
+		S3: Number of read operations=0
+		S3: Number of large read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=9
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=6682848
+		Total time spent by all reduces in occupied slots (ms)=10948224
+		Total time spent by all map tasks (ms)=139226
+		Total time spent by all reduce tasks (ms)=114044
+		Total vcore-milliseconds taken by all map tasks=139226
+		Total vcore-milliseconds taken by all reduce tasks=114044
+		Total megabyte-milliseconds taken by all map tasks=213851136
+		Total megabyte-milliseconds taken by all reduce tasks=350343168
+	Map-Reduce Framework
+		Map input records=1480
+		Map output records=197677
+		Map output bytes=5530937
+		Map output materialized bytes=370206
+		Input split bytes=990
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=968
+		Reduce shuffle bytes=370206
+		Reduce input records=197677
+		Reduce output records=0
+		Spilled Records=395354
+		Shuffled Maps =81
+		Failed Shuffles=0
+		Merged Map outputs=81
+		GC time elapsed (ms)=6216
+		CPU time spent (ms)=70070
+		Physical memory (bytes) snapshot=9010585600
+		Virtual memory (bytes) snapshot=71777677312
+		Total committed heap usage (bytes)=8311537664
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	fi.FrequencyItemsetCounters
+		ITEMSETS=0
+	File Input Format Counters 
+		Bytes Read=313584
+	File Output Format Counters 
+		Bytes Written=0
